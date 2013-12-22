@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+    body{
+        text-align: center;
+        font-family: Arial;
+    }
+    form *{
+        margin: 5px;
+    }
+    label{
+        display: inline-block;
+        width: 140px;
+        text-align: right;
+        font-weight: bold;
+    }
+    input{
+        width: 140px;
+        border:none;
+        background: rgba(0,0,0,0.1);
+        padding: 10px;
+    }
+    button{
+        border:none;
+        background: rgba(0,0,0,0.3);
+        padding: 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Globalize</h1>
+    <form action="/build">
+        <div><label>Module name:</label> <input name="module"></input></div>
+        <div><label>Module version:</label> <input name="version"></input></div>
+        <button>Build it</button>
+    </form>
+    <p>
+        <h2>API:</h2>
+        <p>
+            <pre>/build?module=myModule&version=someVersion</pre>
+        </p>
+        <h3>or</h3>
+        <p>
+            <pre>/build/myModule/someVersion</pre>
+        </p>
+    </p>
+</body>
+</html>

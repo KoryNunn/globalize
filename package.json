@@ -1,0 +1,16 @@
+{
+  "name": "globalize",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "globalify": "0.0.1",
+    "beeline": "~0.1.17"
+  },
+  "moduleDirectory":"./globalify_modules"
+}
