@@ -6,7 +6,8 @@ var globalify = require('globalify'),
     url = require('url'),
     beeline = require('beeline'),
     server,
-    router;
+    router,
+    port = process.env.PORT || 8083;
 
 function buildAndServe(response, module, version){
 
@@ -50,4 +51,4 @@ router = beeline.route({
     }
 });
 
-server = http.createServer(router).listen(8082);
+server = http.createServer(router).listen(port);
