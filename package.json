@@ -9,8 +9,8 @@
   "author": "",
   "license": "BSD",
   "dependencies": {
-    "globalify": "0.0.x",
+    "globalify": "1.0.0",
     "beeline": "0.1.x"
   },
-  "moduleDirectory":"./globalify_modules"
+  "moduleDirectory": "./globalify_modules"
 }
